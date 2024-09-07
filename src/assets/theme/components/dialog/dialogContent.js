@@ -14,16 +14,15 @@ Coded by www.creative-tim.com
 */
 
 // Material Dashboard 2 React base styles
-import typography from "assets/theme-dark/base/typography";
-import borders from "assets/theme-dark/base/borders";
-import colors from "assets/theme-dark/base/colors";
+import typography from "assets/theme/base/typography";
+import borders from "assets/theme/base/borders";
+import colors from "assets/theme/base/colors";
 
 // Material Dashboard 2 React helper functions
-import pxToRem from "assets/theme-dark/functions/pxToRem";
-import rgba from "assets/theme-dark/functions/rgba";
+import pxToRem from "assets/theme/functions/pxToRem";
 
 const { size } = typography;
-const { white } = colors;
+const { text } = colors;
 const { borderWidth, borderColor } = borders;
 
 const dialogContent = {
@@ -31,12 +30,12 @@ const dialogContent = {
     root: {
       padding: pxToRem(16),
       fontSize: size.md,
-      color: rgba(white.main, 0.8),
+      color: text.main,
     },
 
     dividers: {
-      borderTop: `${borderWidth[1]} solid ${rgba(borderColor, 0.6)}`,
-      borderBottom: `${borderWidth[1]} solid ${rgba(borderColor, 0.6)}`,
+      borderTop: `${borderWidth[1]} solid ${borderColor}`,
+      borderBottom: `${borderWidth[1]} solid ${borderColor}`,
     },
   },
 };

@@ -48,7 +48,7 @@ const MDButton = forwardRef(
 MDButton.defaultProps = {
   size: "medium",
   variant: "contained",
-  color: "white",
+  color: "dark",
   circular: false,
   iconOnly: false,
 };

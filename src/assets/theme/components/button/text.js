@@ -14,11 +14,11 @@ Coded by www.creative-tim.com
 */
 
 // Material Dashboard 2 React Base Styles
-import colors from "assets/theme-dark/base/colors";
-import typography from "assets/theme-dark/base/typography";
+import colors from "assets/theme/base/colors";
+import typography from "assets/theme/base/typography";
 
 // Material Dashboard 2 React Helper Functions
-import pxToRem from "assets/theme-dark/functions/pxToRem";
+import pxToRem from "assets/theme/functions/pxToRem";
 
 const { text, info, secondary, transparent } = colors;
 const { size } = typography;
@@ -26,10 +26,10 @@ const { size } = typography;
 const buttonText = {
   base: {
     backgroundColor: transparent.main,
-    minHeight: pxToRem(37),
+    minHeight: pxToRem(40),
     color: text.main,
     boxShadow: "none",
-    padding: `${pxToRem(9)} ${pxToRem(24)}`,
+    padding: `${pxToRem(10)} ${pxToRem(24)}`,
 
     "&:hover": {
       backgroundColor: transparent.main,
@@ -55,8 +55,8 @@ const buttonText = {
   },
 
   small: {
-    minHeight: pxToRem(29),
-    padding: `${pxToRem(6)} ${pxToRem(18)}`,
+    minHeight: pxToRem(32),
+    padding: `${pxToRem(6)} ${pxToRem(16)}`,
     fontSize: size.xs,
 
     "& .material-icon, .material-icons-round, svg": {
@@ -65,8 +65,8 @@ const buttonText = {
   },
 
   large: {
-    minHeight: pxToRem(44),
-    padding: `${pxToRem(12)} ${pxToRem(64)}`,
+    minHeight: pxToRem(47),
+    padding: `${pxToRem(12)} ${pxToRem(28)}`,
     fontSize: size.sm,
 
     "& .material-icon, .material-icons-round, svg": {

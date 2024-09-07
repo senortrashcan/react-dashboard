@@ -20,15 +20,16 @@ Coded by www.creative-tim.com
  */
 
 // Material Dashboard 2 React Base Styles
-import colors from "assets/theme/base/colors";
+import colors from "assets/theme-dark/base/colors";
 
 // Material Dashboard 2 React Helper Functions
-import pxToRem from "assets/theme/functions/pxToRem";
+import pxToRem from "assets/theme-dark/functions/pxToRem";
+import rgba from "assets/theme-dark/functions/rgba";
 
-const { grey } = colors;
+const { white } = colors;
 
 const borders = {
-  borderColor: grey[300],
+  borderColor: rgba(white.main, 0.4),
 
   borderWidth: {
     0: 0,

@@ -14,22 +14,22 @@ Coded by www.creative-tim.com
 */
 
 // Material Dashboard 2 React base styles
-import colors from "assets/theme-dark/base/colors";
-import borders from "assets/theme-dark/base/borders";
-import boxShadows from "assets/theme-dark/base/boxShadows";
+import colors from "assets/theme/base/colors";
+import borders from "assets/theme/base/borders";
+import boxShadows from "assets/theme/base/boxShadows";
 
 // Material Dashboard 2 React helper functions
-import pxToRem from "assets/theme-dark/functions/pxToRem";
+import pxToRem from "assets/theme/functions/pxToRem";
 
-const { background } = colors;
+const { grey, white } = colors;
 const { borderRadius } = borders;
-const { md } = boxShadows;
+const { tabsBoxShadow } = boxShadows;
 
 const tabs = {
   styleOverrides: {
     root: {
       position: "relative",
-      backgroundColor: background.card,
+      backgroundColor: grey[100],
       borderRadius: borderRadius.xl,
       minHeight: "unset",
       padding: pxToRem(4),
@@ -55,8 +55,8 @@ const tabs = {
     indicator: {
       height: "100%",
       borderRadius: borderRadius.lg,
-      backgroundColor: background.default,
-      boxShadow: md,
+      backgroundColor: white.main,
+      boxShadow: tabsBoxShadow.indicator,
       transition: "all 500ms ease",
     },
   },

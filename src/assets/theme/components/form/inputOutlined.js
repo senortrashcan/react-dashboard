@@ -14,15 +14,14 @@ Coded by www.creative-tim.com
 */
 
 // Material Dashboard 2 React Base Styles
-import colors from "assets/theme-dark/base/colors";
-import borders from "assets/theme-dark/base/borders";
-import typography from "assets/theme-dark/base/typography";
+import colors from "assets/theme/base/colors";
+import borders from "assets/theme/base/borders";
+import typography from "assets/theme/base/typography";
 
 // Material Dashboard 2 React helper functions
-import pxToRem from "assets/theme-dark/functions/pxToRem";
-import rgba from "assets/theme-dark/functions/rgba";
+import pxToRem from "assets/theme/functions/pxToRem";
 
-const { inputBorderColor, info, grey, transparent, white } = colors;
+const { inputBorderColor, info, grey, transparent } = colors;
 const { borderRadius } = borders;
 const { size } = typography;
 
@@ -34,7 +33,7 @@ const inputOutlined = {
       borderRadius: borderRadius.md,
 
       "&:hover .MuiOutlinedInput-notchedOutline": {
-        borderColor: rgba(inputBorderColor, 0.6),
+        borderColor: inputBorderColor,
       },
 
       "&.Mui-focused": {
@@ -45,17 +44,13 @@ const inputOutlined = {
     },
 
     notchedOutline: {
-      borderColor: rgba(inputBorderColor, 0.6),
+      borderColor: inputBorderColor,
     },
 
     input: {
-      color: white.main,
+      color: grey[700],
       padding: pxToRem(12),
       backgroundColor: transparent.main,
-
-      "&::-webkit-input-placeholder": {
-        color: grey[100],
-      },
     },
 
     inputSizeSmall: {

@@ -14,28 +14,29 @@ Coded by www.creative-tim.com
 */
 
 // Material Dashboard 2 React base styles
-import boxShadows from "assets/theme/base/boxShadows";
-import typography from "assets/theme/base/typography";
-import colors from "assets/theme/base/colors";
-import borders from "assets/theme/base/borders";
+import boxShadows from "assets/theme-dark/base/boxShadows";
+import typography from "assets/theme-dark/base/typography";
+import colors from "assets/theme-dark/base/colors";
+import borders from "assets/theme-dark/base/borders";
 
 // Material Dashboard 2 React helper functions
-import pxToRem from "assets/theme/functions/pxToRem";
+import pxToRem from "assets/theme-dark/functions/pxToRem";
+import rgba from "assets/theme-dark/functions/rgba";
 
-const { lg } = boxShadows;
+const { md } = boxShadows;
 const { size } = typography;
-const { text, white, transparent, light, dark, gradients } = colors;
+const { text, transparent, light, dark, gradients, background, white } = colors;
 const { borderRadius } = borders;
 
 const autocomplete = {
   styleOverrides: {
     popper: {
-      boxShadow: lg,
+      boxShadow: md,
       padding: pxToRem(8),
       fontSize: size.sm,
       color: text.main,
       textAlign: "left",
-      backgroundColor: `${white.main} !important`,
+      backgroundColor: `${background.card} !important`,
       borderRadius: borderRadius.md,
     },
 
@@ -52,13 +53,13 @@ const autocomplete = {
       transition: "background-color 300ms ease, color 300ms ease",
 
       "&:hover, &:focus, &.Mui-selected, &.Mui-selected:hover, &.Mui-selected:focus": {
-        backgroundColor: light.main,
-        color: dark.main,
+        backgroundColor: rgba(light.main, 0.2),
+        color: white.main,
       },
 
       '&[aria-selected="true"]': {
-        backgroundColor: `${light.main} !important`,
-        color: `${dark.main} !important`,
+        backgroundColor: `${rgba(light.main, 0.2)} !important`,
+        color: `${white.main} !important`,
       },
     },
 
@@ -93,6 +94,14 @@ const autocomplete = {
         color: white.main,
         marginRight: 0,
       },
+    },
+
+    popupIndicator: {
+      color: text.main,
+    },
+
+    clearIndicator: {
+      color: text.main,
     },
   },
 };

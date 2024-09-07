@@ -14,14 +14,14 @@ Coded by www.creative-tim.com
 */
 
 // Material Dashboard 2 React Base Styles
-import colors from "assets/theme/base/colors";
-import borders from "assets/theme/base/borders";
-import boxShadows from "assets/theme/base/boxShadows";
+import colors from "assets/theme-dark/base/colors";
+import borders from "assets/theme-dark/base/borders";
+import boxShadows from "assets/theme-dark/base/boxShadows";
 
 // Material Dashboard 2 React Helper Function
-import rgba from "assets/theme/functions/rgba";
+import rgba from "assets/theme-dark/functions/rgba";
 
-const { black, white } = colors;
+const { black, background } = colors;
 const { borderWidth, borderRadius } = borders;
 const { md } = boxShadows;
 
@@ -33,7 +33,8 @@ const card = {
       position: "relative",
       minWidth: 0,
       wordWrap: "break-word",
-      backgroundColor: white.main,
+      backgroundImage: "none",
+      backgroundColor: background.card,
       backgroundClip: "border-box",
       border: `${borderWidth[0]} solid ${rgba(black.main, 0.125)}`,
       borderRadius: borderRadius.xl,

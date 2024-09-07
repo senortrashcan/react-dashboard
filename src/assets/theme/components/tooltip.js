@@ -17,14 +17,14 @@ Coded by www.creative-tim.com
 import Fade from "@mui/material/Fade";
 
 // Material Dashboard 2 React base styles
-import colors from "assets/theme-dark/base/colors";
-import typography from "assets/theme-dark/base/typography";
-import borders from "assets/theme-dark/base/borders";
+import colors from "assets/theme/base/colors";
+import typography from "assets/theme/base/typography";
+import borders from "assets/theme/base/borders";
 
 // Material Dashboard 2 React helper functions
-import pxToRem from "assets/theme-dark/functions/pxToRem";
+import pxToRem from "assets/theme/functions/pxToRem";
 
-const { black, white } = colors;
+const { black, light } = colors;
 const { size, fontWeightRegular } = typography;
 const { borderRadius } = borders;
 
@@ -38,7 +38,7 @@ const tooltip = {
     tooltip: {
       maxWidth: pxToRem(200),
       backgroundColor: black.main,
-      color: white.main,
+      color: light.main,
       fontSize: size.sm,
       fontWeight: fontWeightRegular,
       textAlign: "center",

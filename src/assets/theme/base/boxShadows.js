@@ -20,22 +20,22 @@ Coded by www.creative-tim.com
  */
 
 // Material Dashboard 2 React Base Styles
-import colors from "assets/theme-dark/base/colors";
+import colors from "assets/theme/base/colors";
 
 // Material Dashboard 2 React Helper Functions
-import boxShadow from "assets/theme-dark/functions/boxShadow";
+import boxShadow from "assets/theme/functions/boxShadow";
 
-const { black, dark, tabs, coloredShadows } = colors;
+const { black, white, tabs, coloredShadows } = colors;
 
 const boxShadows = {
   xs: boxShadow([0, 2], [9, -5], black.main, 0.15),
   sm: boxShadow([0, 5], [10, 0], black.main, 0.12),
-  md: `${boxShadow([0, 2], [2, 0], black.main, 0.14)}, ${boxShadow(
-    [0, 3],
-    [1, -2],
+  md: `${boxShadow([0, 4], [6, -1], black.main, 0.1)}, ${boxShadow(
+    [0, 2],
+    [4, -1],
     black.main,
-    0.2
-  )}, ${boxShadow([0, 1], [5, 0], black.main, 0.12)}`,
+    0.06
+  )}`,
   lg: `${boxShadow([0, 10], [15, -3], black.main, 0.1)}, ${boxShadow(
     [0, 4],
     [6, -2],
@@ -101,7 +101,7 @@ const boxShadows = {
     )}`,
   },
 
-  navbarBoxShadow: `${boxShadow([0, 0], [1, 1], dark.main, 0.9, "inset")}, ${boxShadow(
+  navbarBoxShadow: `${boxShadow([0, 0], [1, 1], white.main, 0.9, "inset")}, ${boxShadow(
     [0, 20],
     [27, 0],
     black.main,

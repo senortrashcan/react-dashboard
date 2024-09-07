@@ -14,13 +14,13 @@ Coded by www.creative-tim.com
 */
 
 // Material Dashboard 2 React base styles
-import colors from "assets/theme-dark/base/colors";
-import typography from "assets/theme-dark/base/typography";
+import colors from "assets/theme/base/colors";
+import typography from "assets/theme/base/typography";
 
 // Material Dashboard 2 React helper functions
-import pxToRem from "assets/theme-dark/functions/pxToRem";
+import pxToRem from "assets/theme/functions/pxToRem";
 
-const { white } = colors;
+const { dark } = colors;
 const { size, fontWeightBold } = typography;
 
 const formControlLabel = {
@@ -35,13 +35,13 @@ const formControlLabel = {
       display: "inline-block",
       fontSize: size.sm,
       fontWeight: fontWeightBold,
-      color: white.main,
+      color: dark.main,
       lineHeight: 1,
       transform: `translateY(${pxToRem(1)})`,
       marginLeft: pxToRem(4),
 
       "&.Mui-disabled": {
-        color: white.main,
+        color: dark.main,
       },
     },
   },

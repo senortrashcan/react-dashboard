@@ -21,12 +21,14 @@ Coded by www.creative-tim.com
 
 const colors = {
   background: {
-    default: "#f0f2f5",
+    default: "#1a2035",
+    sidenav: "#1f283e",
+    card: "#202940",
   },
 
   text: {
-    main: "#7b809a",
-    focus: "#7b809a",
+    main: "#ffffffcc",
+    focus: "#ffffffcc",
   },
 
   transparent: {
@@ -75,12 +77,12 @@ const colors = {
   },
 
   light: {
-    main: "#f0f2f5",
-    focus: "#f0f2f5",
+    main: "#f0f2f566",
+    focus: "#f0f2f566",
   },
 
   dark: {
-    main: "#2c3c58",
+    main: "#344767",
     focus: "#2c3c58",
   },
 
@@ -133,8 +135,8 @@ const colors = {
     },
 
     dark: {
-      main: "#42424a",
-      state: "#191919",
+      main: "#323a54",
+      state: "#1a2035",
     },
   },
 

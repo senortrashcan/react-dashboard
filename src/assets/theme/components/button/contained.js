@@ -14,11 +14,11 @@ Coded by www.creative-tim.com
 */
 
 // Material Dashboard 2 React Base Styles
-import colors from "assets/theme/base/colors";
-import typography from "assets/theme/base/typography";
+import colors from "assets/theme-dark/base/colors";
+import typography from "assets/theme-dark/base/typography";
 
 // Material Dashboard 2 React Helper Functions
-import pxToRem from "assets/theme/functions/pxToRem";
+import pxToRem from "assets/theme-dark/functions/pxToRem";
 
 const { white, text, info, secondary } = colors;
 const { size } = typography;
@@ -26,9 +26,9 @@ const { size } = typography;
 const contained = {
   base: {
     backgroundColor: white.main,
-    minHeight: pxToRem(40),
+    minHeight: pxToRem(37),
     color: text.main,
-    padding: `${pxToRem(10)} ${pxToRem(24)}`,
+    padding: `${pxToRem(9)} ${pxToRem(24)}`,
 
     "&:hover": {
       backgroundColor: white.main,
@@ -44,8 +44,8 @@ const contained = {
   },
 
   small: {
-    minHeight: pxToRem(32),
-    padding: `${pxToRem(6)} ${pxToRem(16)}`,
+    minHeight: pxToRem(29),
+    padding: `${pxToRem(6)} ${pxToRem(18)}`,
     fontSize: size.xs,
 
     "& .material-icon, .material-icons-round, svg": {
@@ -54,8 +54,8 @@ const contained = {
   },
 
   large: {
-    minHeight: pxToRem(47),
-    padding: `${pxToRem(12)} ${pxToRem(28)}`,
+    minHeight: pxToRem(44),
+    padding: `${pxToRem(12)} ${pxToRem(64)}`,
     fontSize: size.sm,
 
     "& .material-icon, .material-icons-round, svg": {

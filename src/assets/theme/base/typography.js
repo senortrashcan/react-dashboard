@@ -20,12 +20,12 @@ Coded by www.creative-tim.com
  */
 
 // Material Dashboard 2 React Base Styles
-import colors from "assets/theme/base/colors";
+import colors from "assets/theme-dark/base/colors";
 
 // Material Dashboard 2 React Helper Functions
-import pxToRem from "assets/theme/functions/pxToRem";
+import pxToRem from "assets/theme-dark/functions/pxToRem";
 
-const { dark } = colors;
+const { white } = colors;
 
 const baseProperties = {
   fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
@@ -46,13 +46,13 @@ const baseProperties = {
 
 const baseHeadingProperties = {
   fontFamily: baseProperties.fontFamily,
-  color: dark.main,
+  color: white.main,
   fontWeight: baseProperties.fontWeightBold,
 };
 
 const baseDisplayProperties = {
   fontFamily: baseProperties.fontFamily,
-  color: dark.main,
+  color: white.main,
   fontWeight: baseProperties.fontWeightLight,
   lineHeight: 1.2,
 };

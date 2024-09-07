@@ -14,16 +14,16 @@ Coded by www.creative-tim.com
 */
 
 // Material Dashboard 2 React base styles
-import typography from "assets/theme/base/typography";
-import borders from "assets/theme/base/borders";
-import colors from "assets/theme/base/colors";
+import typography from "assets/theme-dark/base/typography";
+import borders from "assets/theme-dark/base/borders";
+import colors from "assets/theme-dark/base/colors";
 
 // Material Dashboard 2 React helper functions
-import pxToRem from "assets/theme/functions/pxToRem";
+import pxToRem from "assets/theme-dark/functions/pxToRem";
 
 const { size, fontWeightRegular } = typography;
 const { borderRadius } = borders;
-const { dark } = colors;
+const { white } = colors;
 
 const tab = {
   styleOverrides: {
@@ -42,7 +42,7 @@ const tab = {
       lineHeight: "inherit",
       padding: pxToRem(4),
       borderRadius: borderRadius.lg,
-      color: `${dark.main} !important`,
+      color: `${white.main} !important`,
       opacity: "1 !important",
 
       "& .material-icons, .material-icons-round": {

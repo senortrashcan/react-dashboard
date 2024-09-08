@@ -148,13 +148,13 @@ export default function App() {
 
   return direction === "rtl" ? (
     <CacheProvider value={rtlCache}>
-      <ThemeProvider theme={themeRTL}>
+      <ThemeProvider theme={themeDarkRTL}>
         <CssBaseline />
         {layout === "dashboard" && (
           <>
             <Sidenav
               color={sidenavColor}
-              brand={brandDark}
+              brand={brandWhite}
               brandName="Material Dashboard 2"
               routes={routes}
               onMouseEnter={handleOnMouseEnter}
@@ -172,13 +172,13 @@ export default function App() {
       </ThemeProvider>
     </CacheProvider>
   ) : (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={themeDark}>
       <CssBaseline />
       {layout === "dashboard" && (
         <>
           <Sidenav
             color={sidenavColor}
-            brand={brandDark}
+            brand={brandWhite}
             brandName="Material Dashboard 2"
             routes={routes}
             onMouseEnter={handleOnMouseEnter}

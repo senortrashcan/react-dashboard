@@ -148,7 +148,7 @@ export default function App() {
 
   return direction === "rtl" ? (
     <CacheProvider value={rtlCache}>
-      <ThemeProvider theme={themeDarkRTL}>
+      <ThemeProvider theme={themeRTL}>
         <CssBaseline />
         {layout === "dashboard" && (
           <>

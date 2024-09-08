@@ -172,7 +172,7 @@ export default function App() {
       </ThemeProvider>
     </CacheProvider>
   ) : (
-    <ThemeProvider theme={themeDark}>
+    <ThemeProvider theme={theme}>
       <CssBaseline />
       {layout === "dashboard" && (
         <>
